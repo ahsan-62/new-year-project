@@ -126,7 +126,68 @@
         color: #151414;
         font-size: 30px;
         font-weight: 700;
-        margin-bottom: 18px;
+        margin-top: 10px;
+      }
+      .plan-description {
+        color: #737272;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 500;
+        margin-top: 5px;
+      }
+
+      .section-4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image-overlay {
+        position: relative;
+        height: 300px; /* Adjust height as needed */
+        width: 1200px; /* Adjust width as needed */
+        background-image: url("images/watch.png"); /* Replace 'your-image-url.jpg' with your image URL */
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+      }
+
+      .image-overlay::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to left,
+          rgba(245, 100, 47, 0) 0%,
+          rgba(248, 68, 28, 0.721) 100%
+        );
+        border-radius: 10px;
+      }
+
+      .text-container {
+        position: absolute;
+        color: white; /* Adjust text color as needed */
+      }
+
+      .call-description {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 700;
+        margin: 60px 700px 10px 60px;
+      }
+      .btn-call {
+        border-radius: 5px;
+        background: #fff;
+        padding: 20px 36px;
+        border: none;
+        margin: 0px 910px 0px 60px;
+        color: #f15b22;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
       }
     </style>
   </head>
@@ -188,6 +249,14 @@
             <img src="images/icons/ecom.png" alt="" />
             <h3 class="plan-title">ecommerce</h3>
             <p class="plan-description">I want to develop</p>
+          </div>
+        </div>
+      </section>
+      <section class="section-4">
+        <div class="image-overlay">
+          <div class="text-container">
+            <h3 class="call-description">Always keep a positive mindset</h3>
+            <button class="btn-call" type="button">Call Now</button>
           </div>
         </div>
       </section>
